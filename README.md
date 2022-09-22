@@ -15,8 +15,10 @@
 <center>
 <figure>
 
-![34a20deb56a7dfb657d99f7415d644da.png](https://img.gejiba.com/images/34a20deb56a7dfb657d99f7415d644da.png)
 
-![38472bc08bcd32a858f614873c8aeb72.png](https://img.gejiba.com/images/38472bc08bcd32a858f614873c8aeb72.png)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NUISTGY&layout=compact&theme=radical&card_width=300)](https://github.com/anuraghazra/github-readme-stats)
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=NUISTGY&show_icons=true&theme=radical&line_height=20&include_all_commits=true&count_private=true)
+
 
 ![skills](https://skillicons.dev/icons?i=bash,css,docker,dotnet,electron,express,git,github,html,js,linux,md,mongodb,nextjs,nodejs,postgres,pr,prisma,py,raspberrypi,react,redis,regex,sass,stackoverflow,ts,visualstudio,vscode,vue,workers)
