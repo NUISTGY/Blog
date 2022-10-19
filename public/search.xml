@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>JS学习之路--逻辑或</title>
+      <link href="/2022/10/19/JS----%E9%80%BB%E8%BE%91%E6%88%96/"/>
+      <url>/2022/10/19/JS----%E9%80%BB%E8%BE%91%E6%88%96/</url>
+      
+        <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id><a href="#" class="headerlink" title="||"></a>||</h2><p><strong>关于逻辑或有一点需要声明</strong></p><p>在某些代码中会出现：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">n</span>)</span>&#123;</span><br><span class="line">    n = n || <span class="string">'2'</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(n);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(<span class="string">'1'</span>)   <span class="comment">//输出 1</span></span><br><span class="line">test()      <span class="comment">//输出 2</span></span><br></pre></td></tr></table></figure><p>它的语法为：<br><code>x || y</code></p><ul><li>如果 x 是Truthy则返回x</li><li>如果 x 是Falsy则返回y</li></ul><p><strong>但是不推荐这种用法！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编程 </tag>
+            
+            <tag> 学习 </tag>
+            
+            <tag> JS </tag>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JS学习之路--常量</title>
       <link href="/2022/10/18/JS%20%E2%80%94%E2%80%94%20%E5%B8%B8%E9%87%8F/"/>
       <url>/2022/10/18/JS%20%E2%80%94%E2%80%94%20%E5%B8%B8%E9%87%8F/</url>
