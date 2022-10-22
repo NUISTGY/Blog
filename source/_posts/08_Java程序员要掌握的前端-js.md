@@ -2,7 +2,7 @@
 title:  JS知识点总结
 tags: [编程,学习,Javascript,前端]
 categories: [Javascript]
-date: 2022-10-19
+date: 2022-10-20
 
 ---
 # Javascript
