@@ -18,4 +18,4 @@ date: 2022-10-30
 
 **2022/10/31 更新**
 
-[![xTiGHP.png](https://s1.ax1x.com/2022/10/31/xTiGHP.png)](https://imgse.com/i/xTiGHP)
+[![xTuYsU.png](https://s1.ax1x.com/2022/10/31/xTuYsU.png)](https://imgse.com/i/xTuYsU)
