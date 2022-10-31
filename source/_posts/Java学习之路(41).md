@@ -1,5 +1,5 @@
 ---
-title:  Java学习之路--接口学习（1）
+title:  Java学习之路--接口学习
 tags: [编程,学习,Java]
 categories: [Java]
 date: 2022-10-30
@@ -13,3 +13,9 @@ date: 2022-10-30
 - 接口的方法默认为**public**类型且只能为**public**类型
 - 接口可以声明为**public**或者不声明(**包访问**)
 - JDK9中接口的**default方法和static方法**可以为**private**
+
+---
+
+**2022/10/31 更新**
+
+[![xTiGHP.png](https://s1.ax1x.com/2022/10/31/xTiGHP.png)](https://imgse.com/i/xTiGHP)
