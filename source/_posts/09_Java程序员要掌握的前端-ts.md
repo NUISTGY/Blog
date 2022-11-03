@@ -6,7 +6,7 @@ date: 2022-11-3
 
 ---
 
-## TypeScript
+# TypeScript
 
 ### 1) 动态类型的问题
 
