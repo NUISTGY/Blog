@@ -1,7 +1,7 @@
 ---
 title:  Docker中的Redis部署
 tags: [Redis, Docker]
-categories: [Docker, Redis, 后端]
+categories: [Docker]
 date: 2022-9-18
 
 ---
