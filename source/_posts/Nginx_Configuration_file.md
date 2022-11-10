@@ -128,7 +128,7 @@ ps -ef | grep nginx
 
 最后返回的结果由 root 用户改为 www 用户，代表配置成功。
 
-```sh {3}
+```sh
 [root@master conf]# ps -ef | grep nginx
 root       8960      1  0 16:13 ?        00:00:00 nginx: master process ./nginx
 www       11975   8960  0 20:44 ?        00:00:00 nginx: worker process
@@ -180,7 +180,7 @@ Commercial support is available at
 
 5. 修改 nginx.conf
 
-```nginx {3}
+```nginx
 location / {
 	# root   html;  # 原始的代码注释掉
 	root   /root/html;    # 不再是 html 目录，而是 root 下的 html 目录
@@ -388,7 +388,7 @@ location /get_text {
 }
 location /get_json{
     default_type application/json;   # 返回 json 字符串类型
-    return 200 '{"name": "xu", "age": 21}';
+    return 200 '{"name": "xiaoming", "age": 21}';
 }
 ```
 
@@ -503,7 +503,7 @@ tail -f /usr/local/nginx/logs/my.log
 
 ## server块和location块
 
-server 块和 location 块都是我们要重点学习的内容，因为我们后面会对 Nginx 的功能进行详细讲解，所以该内容在[静态资源部署](/middleware/Nginx/Nginx_Static_resource_deployment/)和[静态资源访问](/middleware/Nginx/NginxStatic_resource_access/)进行详细说明。
+server 块和 location 块都是我们要重点学习的内容，因为我们后面会对 Nginx 的功能进行详细讲解，所以该内容在**静态资源部署**和**静态资源访问**进行详细说明。
 
 本次我们这是认识下 Nginx 默认给的 nginx.conf 中的相关内容，以及 server 块与 location 块在使用的时候需要注意的一些内容。
 

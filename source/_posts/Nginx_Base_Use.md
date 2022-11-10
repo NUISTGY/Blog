@@ -250,7 +250,7 @@ Options:
 
 1. 两个查看版本命令
 
-```sh {2,7}
+```sh
 # 查看版本指令 1
 [root@master sbin]# nginx -v
 # 返回结果
@@ -268,7 +268,7 @@ configure arguments: --prefix=/usr/local/nginx
 
 我们首先要知道配置文件的路径在哪，先执行 `-t` 进行测试
 
-```sh {6}
+```sh 
 # 测试 Nginx 的配置文件语法
 [root@master sbin]# nginx -t
 
@@ -288,7 +288,7 @@ HelloWorld
 
 重新进行测试
 
-```sh {6}
+```sh
 # 测试 Nginx 的配置文件语法
 [root@master sbin]# nginx -t
 
@@ -322,7 +322,7 @@ HelloWorld
 
 测试配置文件的时候，指定拷贝后的配置文件进行测试
 
-```sh {6}
+```sh
 # 指定配置文件进行测试
 [root@master nginx]# nginx -tc /opt/nginx.conf
 
