@@ -67,3 +67,50 @@ class Cat extends Animal{	//继承
 }
 
 ```
+
+---
+
+**多态的注意事项**
+
+```java
+class father{
+    int x = 1;
+
+    void show(){
+        System.out.println(x);
+    }
+}
+
+class son extends father{
+    int x = 2;
+    
+    @Override
+    void show(){
+        System.out.println(x);
+    }
+
+    void special(){}
+}
+
+class test{
+    public static void main(String[] args) {
+        father o = new son();
+        
+        o.show();
+        System.out.println(o.x);
+        // o.special(); ERROR
+
+        son s = (son)o;
+        
+        s.show();
+        System.out.println(s.x);
+        s.special();
+    }
+}
+```
+
+**说明：**
+
+- 对于方法的调用，编译时以左边引用类型有的为准，运行时以具体绑定的对象类型为准
+- 对于变量的调用，编译时以左边引用类型有的为准，运行时也以左边的引用类型为准
+- 可以通过强转的方式将指向子类对象的父类引用转回子类引用，转回后的引用支持访问子类特有的方法
