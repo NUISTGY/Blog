@@ -4,10 +4,10 @@
 # ---------------
 theme_color:
   enable: true
-  main: "#004600"
-  paginator: "#004600"
-  button_hover: "#003300"
-  text_selection: "#003300"
+  main: "#FFFFFF"
+  paginator: "#073472"
+  button_hover: "#293799"
+  text_selection: "#073472"
   link_color: "#858585"
   hr_color: "#A4D8FA"
   tag_start_color: "#A4D8FA"
@@ -126,9 +126,9 @@ cdn:
 
 # Post info settings
 # ---------------
-avatar: http://r.photo.store.qq.com/psc?/V14eJTFY137vJk/cnQ2D7YjAZ5R6pY0fmc9jgCqVB3ImjsxGUOZ.vc77kDsEnIVTLf2mSSJ6Y6vFW94Mcab*2OmXqY9iWaksXwrBNsvyKd0aWWJwyMTtKd1DOQ!/r
+avatar: https://images5.alphacoders.com/423/423529.jpg
 
-top_img: https://w.wallhaven.cc/full/3z/wallhaven-3zgz2y.png
+top_img: https://w.wallhaven.cc/full/83/wallhaven-83do1o.jpg
 post_meta:
   date_type: created # created or updated
   categories: true

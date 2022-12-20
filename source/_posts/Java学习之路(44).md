@@ -6,7 +6,7 @@ date: 2022-11-18
 
 ---
 
-**静态内部类：**
+## **静态内部类：**
 
 ```java
 /**
@@ -92,7 +92,9 @@ class Outter{
 }
 ```
 
-**一般内部类：**
+---
+
+## **一般内部类：**
 
 ```java
 /**
@@ -158,8 +160,8 @@ class Outter{
     }
 }
 ```
-
-**匿名内部类：**
+---
+## **匿名内部类：**
 
 ```java
 /**
@@ -214,4 +216,82 @@ abstract class Animal{
     }
 }
 ```
+---
+## **注意事项**
 
+```java
+class Outter{
+    
+    static int x = 1;
+    static int y = 3;
+    static int z = 5;
+    static int func(){
+        return x + y;
+    }
+
+    static class Inner{
+        static int x = 2;
+        static int func(){
+            return x + y;
+        }
+        int z = 6;
+        public static void main(String[] args) {
+            System.out.println(x);
+            System.out.println(Outter.x);
+            System.out.println(func());
+            System.out.println(Outter.func());
+            System.out.println(new Inner().z);
+            System.out.println(new Outter().z);
+        }
+    }
+}
+
+/**
+ * 输出结果：
+ * 2
+ * 1
+ * 5
+ * 4
+ * 6
+ * 5
+ */
+```
+**说明：** 
+- 在静态内部类中,和外部类同名的变量和方法会覆盖外部的同名的静态变量和方法。
+- 若要访问外部类的静态方法或者变量则需要通过外部类名来调用,或者创建外部类对象来调用。
+
+```java
+class Outter{
+    static int x = 1;
+    class Inner {
+        int x = 2;
+        void function(){
+            System.out.println(x);
+            System.out.println(this);
+            System.out.println(this.x);
+            System.out.println(Outter.x);
+            System.out.println(Outter.this);
+            System.out.println(Outter.this.x);
+            System.out.println(new Outter().x);
+        }
+    }
+    public static void main(String[] args) {
+        Outter.Inner inner = new Outter().new Inner();
+        inner.function();
+    }
+}
+
+/**
+ * 输出结果：
+ * 2
+ * com.itheima._15单例模式.Outter$Inner@15db9742
+ * 2
+ * 1
+ * com.itheima._15单例模式.Outter@6d06d69c
+ * 1
+ * 1
+ */
+```
+**说明：** 
+- 在实例内部类中,和外部类同名的变量和方法会覆盖外部的同名的变量和方法。
+- 若要访问外部类的方法或者变量则需要通过外部类名来调用,或者创建外部类对象来调用,或者通过外部类名+this关键字来调用。
