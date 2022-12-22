@@ -1,5 +1,5 @@
 ---
-title: JDBC 基础
+title: JDBC-基础
 tags: [Java, JDBC, 数据库]
 categories: [JDBC]
 date: 2022-12-20

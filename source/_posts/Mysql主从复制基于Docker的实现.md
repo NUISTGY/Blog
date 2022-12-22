@@ -1,7 +1,7 @@
 ---
 title:  Mysql主从复制————基于Docker的实现
-tags: [Mysql, Docker, 数据库, 后端]
-categories: [数据库]
+tags: [MySQL, Docker, 数据库, 后端]
+categories: [MySQL]
 date: 2022-9-21
 
 ---
