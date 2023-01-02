@@ -62,18 +62,18 @@ date: 2022-12-31
 
 * 能够使用FileWriter写数据实现换行和追加写 
 
-  * ```java
+   ```java
     追加管道是： Writer fw = new FileWriter("Day10Demo/out03.txt" , true); // 追加管道！！
     换行： fw.write("\r\n"); // 写一个字符串的换行符！
     ```
 
 * 能够使用FileReader读数据一次一个字符 
 
-  * 
+  
 
 * 能够使用FileReader读数据一次一个字符数组 
 
-  * ```java
+   ```java
     Reader fr = new FileReader("Day10Demo/dlei02.txt");
     
     char[] buffer = new char[1024]; // 定义一个桶   // 3 + 3 + 1
@@ -124,7 +124,7 @@ date: 2022-12-31
   
 * 能够使用转换流读取指定编码的文本文件 
   
-  * ```java
+   ```java
     // 代码：UTF-8    文件：GBK(ab我爱你)
     // 1.先提取文件的原始字节流: o o oo oo oo
     InputStream is = new FileInputStream("D:\\itcast\\网络编程公开课\\Netty.txt");
@@ -142,7 +142,7 @@ date: 2022-12-31
   
 * 能够使用转换流写入指定编码的文本文件 
   
-  * ```java
+   ```java
     // 1.写一个字节输出流通向文件
     OutputStream os = new FileOutputStream("Day10Demo/out05.txt");
     
@@ -161,7 +161,7 @@ date: 2022-12-31
   
   * ObjectOutputStream
   
-  * ```java
+   ```java
     // 1.创建一个User对象
     User user = new User("泷泽萝拉","dongjing-lzll","15longze",21);
     // 需求：把Java对象序列化到本地文件中去。
@@ -178,7 +178,7 @@ date: 2022-12-31
   
 * 能够使用反序列化流读取文件到程序中 
 
-  * ```java
+   ```java
     // 1.定义一个字节输入流与Java对象的源文件接通
     InputStream is = new FileInputStream("Day10Demo/obj.dat");
     
